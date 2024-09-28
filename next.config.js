@@ -17,5 +17,13 @@ const nextConfig = {
   //   },
   // ],
 };
+// next.config.js
+module.exports = {
+  experimental: {
+    appDir: true, // Ensure this is set if using the app directory
+  },
+  // other config
+};
 
 module.exports = nextConfig;
+
