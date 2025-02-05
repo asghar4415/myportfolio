@@ -4,7 +4,7 @@ import { monaSans } from "../fonts/monaSans";
 import { motion } from "framer-motion";
 import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
-import profile from "../../public/profile.webp";
+
 
 const Hero = () => {
   return (
@@ -18,23 +18,12 @@ const Hero = () => {
 
       <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
         <div>
-          {/* <Link
-            href="https://cal.com/victorwilliams/30min"
-            target="_blank"
-            aria-label="BOOK A CALL"
-          >
-            <motion.button
-              className="hidden rounded-md border-2 border-[#e4ded7] py-2 px-4 text-[14px] font-semibold text-[#e4ded7] sm:block  md:text-[16px] lg:block"
-              variants={bodyAnimation}
-            >
-              BOOK A CALL
-            </motion.button>
-          </Link> */}
+         
         </div>
 
         <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
           <Link
-            href="https://github.com/victorcodess"
+            href="https://github.com/asghar4415"
             target="_blank"
             aria-label="View GitHub Profile"
           >
@@ -46,7 +35,7 @@ const Hero = () => {
             </motion.p>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/victor-williams-chukwudi/"
+            href="https://www.linkedin.com/in/asghar-ali-4415iin/"
             target="_blank"
             aria-label="View LinkedIn Profile"
           >
@@ -58,7 +47,7 @@ const Hero = () => {
             </motion.p>
           </Link>
           <Link
-            href="https://twitter.com/victorwill__"
+            href="hhttps://www.instagram.com/djgraphyy/"
             target="_blank"
             aria-label="View Instagram Profile"
           >
@@ -85,14 +74,7 @@ const Hero = () => {
             className="absolute bottom-[-110px] mx-auto sm:bottom-[-100px] md:bottom-[-130px] lg:bottom-[-150px]"
             variants={imageAnimation}
           >
-            {/* <Image
-              src={profile}
-              priority
-              alt="Victor's headshot"
-              data-blobity-tooltip="Giga Chad"
-              data-blobity-invert="false"
-              className=" w-[150px] rounded-[16px] grayscale hover:grayscale-0 md:w-[200px] md:rounded-[32px] lg:w-[245px]"
-            /> */}
+           
           </motion.div>
         </div>
       </div>
@@ -107,15 +89,7 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-            Frontend Engineer and Web Designer, prev at{" "}
-            <Link
-              href="https://www.korahq.com/"
-              target="_blank"
-              className="underline underline-offset-2 hover:no-underline"
-              aria-label="Kora Website"
-            >
-              Kora,
-            </Link>{" "}
+            Fullstack Engineer and Content Creator,
             currently available for work.
           </p>
         </motion.div>
@@ -125,8 +99,8 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-            Focused on interfaces and experiences, working remotely from Lagos,
-            Nigeria.
+            Focused on interfaces and experiences, working remotely from Karachi,
+            Pakistan.
           </p>
         </motion.div>
       </div>
