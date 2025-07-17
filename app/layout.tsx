@@ -1,26 +1,39 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const calSans = localFont({
+  src: "../public/fonts/CalSans-SemiBold.ttf",
+  variable: "--font-calsans",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://asgharali.vercel.app"), // replace with your real domain
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Asghar Ali",
+    template: "%s | Asghar Ali",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Personal website of Asghar Ali",
   openGraph: {
-    title: "chronark.com",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    title: "Asghar Ali",
+    description: "Personal website of Asghar Ali",
+    url: "https://asgharali.vercel.app",
+    siteName: "Asghar Ali",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://asgharali.vercel.app/og-image.png", // update with real OG image
         width: 1920,
         height: 1080,
+        alt: "Asghar Ali – Developer Portfolio",
       },
     ],
     locale: "en-US",
@@ -37,23 +50,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Chronark",
-    card: "summary_large_image",
-  },
-  icons: {
-    shortcut: "/favicon.png",
-  },
 };
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-calsans",
-});
 
 export default function RootLayout({
   children,
@@ -61,13 +58,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="en" className={`${inter.variable} ${calSans.variable}`}>
       <head>
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : ""
+        }`}
       >
         {children}
       </body>
