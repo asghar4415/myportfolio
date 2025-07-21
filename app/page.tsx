@@ -34,7 +34,17 @@ export default function Home() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
-        
+        <span className="text-sm text-zinc-500">
+          View my resume{" "}
+          <a
+            href="https://drive.google.com/file/d/1qK0WLQGyec9tSj4MmmL4qwwQ_p8OqV_n/view?usp=drive_link"
+            className="text-zinc-300 hover:text-zinc-100"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+        </span>
       </div>
     </div>
   );
