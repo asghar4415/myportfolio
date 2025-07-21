@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import { Projects } from "../components/projects";
+import type { Project } from "../components/projects";
+
 
 
 type Props = {
-	project: Projects;
+	project: Project;
 };
 
 export const Article: React.FC<Props> = ({ project }) => {

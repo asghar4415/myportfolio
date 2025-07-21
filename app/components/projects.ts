@@ -1,4 +1,14 @@
-export const Projects = [
+export type Project = {
+  title: string;
+  description: string;
+  date: string;
+  url: string;
+  repository: string;
+  published: boolean;
+  slug: string;
+};
+
+export const Projects: Project[] = [
   {
     title: "CamPick",
     description:
@@ -8,7 +18,6 @@ export const Projects = [
     repository: "https://github.com/asghar4415/campick-nuces",
     published: true,
     slug: "campick",
-    image: "public/app_logo_192.png",
   },
   {
     title: "SMIT Student Admission Portal",

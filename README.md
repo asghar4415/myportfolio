@@ -1,6 +1,6 @@
 ## 👋 Hello !!
 
-I'm **Asghar Ali** — a passionate developer and creative mind behind several web projects.
+I'm **Asghar Ali** — a passionate developer and a content creator.
 
 🌐 **Visit my portfolio:** [Click here](https://your-portfolio-link.com)
 
