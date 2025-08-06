@@ -37,7 +37,7 @@ export default function Home() {
         <span className="text-sm text-zinc-500">
           View my resume{" "}
           <a
-            href="https://drive.google.com/file/d/1qK0WLQGyec9tSj4MmmL4qwwQ_p8OqV_n/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1igtb9GMcgVmgLdwjKKEKeRBiLjbhWQYy/view?usp=sharing"
             className="text-zinc-300 hover:text-zinc-100"
             target="_blank"
             rel="noopener noreferrer"
